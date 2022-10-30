@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body class="container">
+<body>
     <!--header-->
-    <header > 
-        <div class="header">
+    <header class="header" > 
+        <div class="container header-container">
         <nav class="nav">
             <a href="./index.html" class="logo"><span class="logo-first-part">Web</span><span
                 class="logo-second-part">Studio</span> </a>
@@ -33,70 +33,79 @@
     <!--main-->
     <main>
         <!--1 sektion-->
-        <section class="hero">
+        <section class="hero section">
+            <div class="container">
             <h1 class="hero-title">Ефективні рішення<br>для вашого бізнесу</h1>
             <button type="submit" class="button">Замовити послугу</button>
+        </div>
         </section>
         <!--2 sektion-->
-        <section>
+        <section class="section title-section">
+            <div class="container">
             <h2 class="caption">Наші переваги</h2>
-            <ul class="list">
-                <li>
+            <ul class="list work-section">
+                <li class="title-section-work">
                     <h3 class="work">УВАГА ДО ДЕТАЛЕЙ</h3>
                     <p class="work-title">Ідейні міркування, і навіть початок<br> повсякденної роботи з формування<br> позиції.</p>
                 </li>
-                <li>
+                <li class="title-section-work">
                     <h3 class="work">ПУНКТУАЛЬНІСТЬ</h3>
                     <p class="work-title">Завдання організації, особливо рамки<br> і місце навчання кадрів тягне у себе.</p>
                 </li>
 
-                <li>
+                <li class="title-section-work">
                     <h3 class="work">ПЛАНУВАННЯ</h3>
                     <p class="work-title">Так само консультація з широким<br> активом значною мірою зумовлює.</p>
                 </li>
-                <li>
+                <li class="title-section-work">
                     <h3 class="work">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                     <p class="work-title">Значимість цих проблем<br> настільки очевидна, що реалізація планових<br> завдань.</p>
                 </li>
             </ul>
+        </div>
         </section>
         <!--3 section-->
-        <section>
+        <section class="section">
+            <div class="container">
             <h2 class="title-work">Чим ми займаємося</h2>
-            <ul class="list">
+            <ul class="list list-work">
                 <li><img src="./images/section3/computer.jpg" alt="робота за комп'ютером" width="370" height="294"></li>
                 <li><img src="./images/section3/telephone.jpg" alt="робота з телефоном" width="370" height="294"></li>
                 <li><img src="./images/section3/tablet.jpg" alt="робота з планшетом" width="370" height="294"></li>
             </ul>
+        </div>
         </section>
         <!--4 Секція-->
-        <section>
+        <section class="section">
+            <div class="div container">
             <h2 class="title-team">Наша команда</h2>
-            <ul class="list">
-                <li><img src="./images/section4/product.jpg" alt="Ігор Дем'яненко" width="270" height="260">
+            <ul class="list team-people">
+                <li class="team-people-list"><img class="photo" src="./images/section4/product.jpg" alt="Ігор Дем'яненко" width="270" height="260">
                     <h3 class="team">Ігор Дем'яненко</h3>
                     <p class="people">Product Designer</p>
                 </li>
-                <li><img src="./images/section4/frontend.jpg" alt="Ольга Рєпіна" width="270" height="260">
+                <li class="team-people-list"><img class="photo" src="./images/section4/frontend.jpg" alt="Ольга Рєпіна" width="270" height="260">
                     <h3 class="team">Ольга Рєпіна</h3>
                     <p class="people">Frontend Developer</p>
                 </li>
-                <li><img src="./images/section4/marketing.jpg" alt="Микола Тарасов" width="270" height="260">
+                <li class="team-people-list"><img class="photo" src="./images/section4/marketing.jpg" alt="Микола Тарасов" width="270" height="260">
                     <h3 class="team">Микола Тарасов</h3>
                     <p class="people">Marketing</p>
                 </li>
-                <li><img src="./images/section4/designer.jpg" alt="Михайло Єрмаков" width="270" height="260">
+                <li class="team-people-list"><img class="photo" src="./images/section4/designer.jpg" alt="Михайло Єрмаков" width="270" height="260">
                     <h3 class="team">Михайло Єрмаков</h3>
                     <p class="people">UI Designer</p>
                 </li>
             </ul>
+        </div>
         </section>
     </main>
     <!--footer-->
     <footer class="page-footer">
+        <div class="container">
         <a href="./index.html" class="logo"><span class="logo-first-part">Web</span><span
             class="logo-second">Studio</span> </a>
-        <address>
+        <address class="contacts">
             <ul class="list">
                 <li><a href="https://goo.gl/maps/5bwDjXCC3WstTkkj8" target="_blank" rel="noopener nofollow noreferrer"
                         class="adres-footer">м. Київ, пр-т Лесі Українки, 26</a></li>
@@ -104,6 +113,7 @@
                 <li><a href="tel:+380961111111" class="tel-footer">+38 096 111 11 11</a></li>
             </ul>
         </address>
+    </div>
     </footer>
 
 </body>

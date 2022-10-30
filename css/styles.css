@@ -10,26 +10,52 @@ body {
   color: var(--title-text-color);
 }
 .container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.work-section {
+  display: flex;
+  gap: 30px;
 }
 .list {
   list-style: none;
-  padding: 0;
+}
+p,
+ul,
+h1,
+h2,
+h3 {
   margin: 0;
 }
-
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+li {
+  line-height: initial;
+}
+img {
+  display: block;
+}
 a {
   text-decoration: none;
   list-style: none;
 }
+
 /* logo */
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.19;
 
-  display: flex;
-  align-items: center;
-  margin-left: 215px;
+  display: block;
+  margin-right: 93px;
 }
 
 .logo-first-part {
@@ -42,31 +68,26 @@ a {
   color: #000000;
 }
 /* nav */
-.nav,
-.mail-tel,
 .list-nav {
+  margin: 0;
   display: flex;
+  gap: 50px;
 }
-.list-nav li,
-.mail-tel li {
-  margin-right: 50px;
-}
-.list-nav li:last-child,
-.mail-tel li:last-child {
-  margin-right: 0px;
-}
-.header {
+.nav {
   display: flex;
   align-items: center;
 }
-.list-nav {
-  margin-left: 93px;
-}
-.mail-tel {
-  margin-left: 344px;
-}
 
 /* header */
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
 .link:hover,
 .link:focus {
   color: var(--accent-color);
@@ -96,17 +117,27 @@ a {
   line-height: 1.14;
   color: var(---primary-text-color);
 }
+.mail-tel {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
 
 /*1 sektion */
 .hero {
   background-color: #2f303a;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   color: var(--primary-white-color);
+
+  margin: 0 auto 30px auto;
+  width: 696px;
 }
 .button {
   font-size: 16px;
@@ -116,6 +147,10 @@ a {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
+
+  display: block;
+  padding: 10px 32px;
+  margin: 0 auto;
 }
 .button:hover,
 .button:focus {
@@ -123,6 +158,13 @@ a {
   background-color: var(--accent-color);
 }
 /*2 sektion */
+.title-section-work {
+  margin-bottom: 10px;
+  width: 270px;
+}
+.title-section {
+  padding-bottom: 0;
+}
 .title {
   font-size: 14px;
   line-height: 1.14;
@@ -145,19 +187,44 @@ a {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
+}
+.list-work {
+  display: flex;
+  gap: 30px;
 }
 /*4 sektion */
+.team-people {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+.team-people-list {
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.photo {
+  margin-bottom: 30px;
+}
+
 .title-team {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
 }
 .team {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  margin-bottom: 10px;
 }
 .people {
   font-size: 16px;
@@ -168,7 +235,21 @@ a {
 /*footer*/
 .page-footer {
   background-color: #2f303a;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: block;
+  margin-bottom: 20px;
+  flex-direction: column;
+  gap: 9px;
+  align-items: flex-start;
 }
+.contacts {
+  flex-direction: column;
+  gap: 9px;
+  align-items: flex-start;
+}
+
 .tel-footer,
 .mail-footer {
   font-family: "Roboto", sans-serif;
@@ -218,6 +299,8 @@ a {
   font-size: 18px;
   line-height: 2;
   color: var(--title-text-color);
+
+  margin-bottom: 4px;
 }
 .hero-projekts {
   font-family: "Roboto", sans-serif;
@@ -241,4 +324,30 @@ a {
 }
 .activ-link {
   color: var(--accent-color);
+}
+/*portfolio*/
+.portfolio-section {
+  margin-bottom: 50px;
+}
+.button-list {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+.portfolio-list {
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+  display: flex;
+  gap: 30px;
+}
+.portfolio-projekts {
+  border: 1px solid #eeeeee;
+  border-top: 0;
+  padding: 20px 24px;
+}
+.portfolio-projekts {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
 }
