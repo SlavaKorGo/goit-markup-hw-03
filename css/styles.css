@@ -151,6 +151,8 @@ a {
   display: block;
   padding: 10px 32px;
   margin: 0 auto;
+  border-color: transparent;
+  border-radius: 4px;
 }
 .button:hover,
 .button:focus {
@@ -208,15 +210,15 @@ a {
 .team-people-list {
   background-color: #ffffff;
 
-  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 0px 0px 4px 4px;
 }
-.photo {
-  margin-bottom: 30px;
+.our-team {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-
 .title-team {
   font-size: 36px;
   line-height: 1.17;
@@ -346,7 +348,6 @@ a {
   padding: 20px 24px;
 }
 .portfolio-section {
-  background-color: #f5f5f5;
   margin-bottom: 50px;
 }
 .button-list {
